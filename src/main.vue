@@ -101,6 +101,20 @@
 								</f7-col>
 							</f7-grid>
 						</f7-block>
+                        <v-bottom-nav absolute :value="true" :active.sync="e1" color="transparent">
+                          <v-btn flat color="teal" value="recent">
+                            <span>Recent</span>
+                            <v-icon>history</v-icon>
+                          </v-btn>
+                          <v-btn flat color="teal" value="favorites">
+                            <span>Favorites</span>
+                            <v-icon>favorite</v-icon>
+                          </v-btn>
+                          <v-btn flat color="teal" value="nearby">
+                            <span>Nearby</span>
+                            <v-icon>place</v-icon>
+                          </v-btn>
+                        </v-bottom-nav>
 					</f7-page>
 				</f7-pages>
 			</f7-view>
@@ -153,5 +167,11 @@
 </template>
 
 <script>
-	export default {}
+export default {
+	data(){
+	    return {
+	        el: 'recent',
+	    }
+	}
+}
 </script>

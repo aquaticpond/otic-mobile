@@ -14,6 +14,7 @@ import Framework7Vue from 'framework7-vue'
 
 // Import App Custom Styles
 import AppStyles from './assets/sass/main.scss'
+import VuetifyStyles from 'vuetify/dist/vuetify.css'
 import FlexibleGridStyles from 'flexible-grid/dist/css/flexible-grid.css'
 
 
