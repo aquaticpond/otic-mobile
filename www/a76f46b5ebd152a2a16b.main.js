@@ -52952,9 +52952,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('f7-page', {
-    staticClass: "theme-indigo"
-  }, [_c('f7-navbar', {
+  return _c('f7-page', [_c('f7-navbar', {
     attrs: {
       "title": "About",
       "back-link": "Back",
