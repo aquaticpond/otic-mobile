@@ -27,6 +27,7 @@ Vue.use(Framework7Vue)
 Vue.use(Vuetify)
 
 window.hammer = require('hammerjs')
+window.axios = require('axios')
 
 // Init App
 new Vue({

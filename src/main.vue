@@ -153,7 +153,7 @@
 							</f7-list-item>
 						</f7-list>
 						<f7-list>
-							<f7-list-button title="Sign In" close-login-screen></f7-list-button>
+							<f7-list-button title="Sign In" @click="login()"></f7-list-button>
 							<f7-list-label>
 								<p>Click Sign In to close Login Screen</p>
 							</f7-list-label>
@@ -172,6 +172,19 @@ export default {
 	    return {
 	        el: 'recent',
 	    }
+	},
+
+	methods: {
+	    login()
+		{
+		    const data = {
+		        email: Dom7('input[name="username"]').val(),
+				password: Dom7('input[name="password"]').val()
+			}
+
+		    axios.post('http://www.iuss.io/login', data)
+				.then(response => console.log(response));
+		}
 	}
 }
 </script>
